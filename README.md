@@ -94,7 +94,7 @@ FDC BOARD SCHEMATICS....................................................
 
 1.  **OPERATION**
 
-> ![](media/image4.jpeg)[]{#bookmark4 .anchor}
+> ![](media/image4.jpeg)[]
 >
 > **1-3. PARTS IDENTIFICATION**
 
@@ -107,11 +107,11 @@ and the contents can be easily retrieved and rewritten. This floppydisk
 drive unit will greatly extend the information-handling capabilities of
 your MSX computer.
 
-[]{#bookmark6 .anchor}
+
 
 **1-3-1. Drive Unit**
 
-[]{#bookmark8 .anchor}**1-2. SPECIFICATIONS**
+**1-2. SPECIFICATIONS**
 
 **Interface Section**
 
@@ -212,7 +212,7 @@ Blank disk (1)
 
 Disk labels (3)
 
-> []{#bookmark10 .anchor}**1-6. STARTING UP MSX-DISK BASIC**
+}**1-6. STARTING UP MSX-DISK BASIC**
 
 **Notes on connection**
 
@@ -261,7 +261,7 @@ com­puter. If the computer has been turned on first, either press the
 RESET button of the computer or set the POWER switch of the computer to
 OFF, then to ON.
 
-[]{#bookmark12 .anchor}**1-5. INSERTING A DISK**
+**1-5. INSERTING A DISK**
 
 Without opening the metal disk guard, insert the floppy­disk and gently
 push it *in until you hear* a click.
@@ -276,7 +276,7 @@ Press this button.
 
 ![](media/image13.png)
 
-> []{#bookmark16 .anchor}**1-7. PIN ASSIGNMENT OF THE CONNECTORS**
+**1-7. PIN ASSIGNMENT OF THE CONNECTORS**
 >
 > **Pin Assignment of the Connectors**
 >
