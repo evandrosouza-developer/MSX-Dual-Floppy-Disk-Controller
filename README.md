@@ -355,7 +355,7 @@ Press this button.
   ---------------------------------------------------------------------------------
 ```
 
-## **THEORY OF OPERATION** {#theory-of-operation .list-paragraph}
+## **THEORY OF OPERATION**
 
 **2-1. Cartridge Board**
 
@@ -483,38 +483,25 @@ with each other, the read or write operation will duly be carried out.
 When under a read address command, the ID field track number will be
 retained intact.
 
+## **OVERALL BLOCK DIAGRAM**
 ![](media/image23.png)
 
 ## **HB720 Boards**
 
 **SCHEMATIC DIAGRAM AND PRINTED CIRCUIT BOARD**
 
-**CARTRIDGE BOARD - COMPONENT SIDE**
+**CARTRIDGE BOARD - 3D VIEW**
 
 ![](media/image25.jpeg)
-
-![](media/image26.png)
-
-![](media/image28.png)
-
-![](media/image30.png
-
-![](media/image32.png)
 
 ## CARTRIDGE BOARD -- SCHEMATICS
 
 ![](media/image35.png)
 
-# FDC Board PCB & Schematics
+**FDC Board - 3D VIEW**
 
 ![](media/image37.png)
 
-![](media/image38.png)
-
-![](media/image40.png)
-
-![](media/image44.png)
-
-![](media/image46.png)
+## FDC Board Schematics
 
 ![](media/image48.png)
