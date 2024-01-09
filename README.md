@@ -8,13 +8,11 @@
 
 **EPCOM/SHARP HB-3600**
 
-![](media/image1.jpeg){width="2.452228783902012in"
-height="3.1619761592300963in"}
+![](media/image1.jpeg)
 
 **SONY HBD-50**
 
-![](media/image2.jpeg){width="2.9681528871391074in"
-height="2.2693569553805775in"}
+![](media/image2.jpeg)
 
 ***Based on MSXHans, 2001 PDF***
 
@@ -58,39 +56,22 @@ height="2.2693569553805775in"}
 
 2-2. FDC
 
-2-2-1. Memory Map Detailed ...
+2-2-1. Memory Map Detailed
 
-2-2-2. Selection of Individual FDC Registers . ...\...
-...............\.....
+2-2-2. Selection of Individual FDC Registers
 
-2-2-3. Operation of Individual Registers ...
-
-2-1
+2-2-3. Operation of Individual Registers 
 
 2-1
-
-2-1
-
-2-1
-
-2-2
-
-2-2
-
-2-2
-
 2-2
 
 **3. BLOCK DIAGRAM**
 
-OVERALL....................................................................
-3-1
+OVERALL......................3-1
 
-**4.**
+**4. SCHEMATIC DIAGRAM AND PRINTED CIRCUIT BOARD**
 
-**SCHEMATIC DIAGRAM AND PRINTED CIRCUIT BOARD**
-
-HB720 BOARDS ............\.... 4-1
+HB720 BOARDS ............ 4-1
 
 CARTRIDGE BOARD
 PCB............................................\.........\...4-1
@@ -105,11 +86,11 @@ PCB..................................................................
 FDC BOARD SCHEMATICS....................................................
 4-4
 
-**SCHEMATIC DIAGRAM AND PRINTED CIRCUIT BOARD**..
+
+**5. SCHEMATIC DIAGRAM AND PRINTED CIRCUIT BOARD**..
 \...\...\...\...\...\...\....
 \...\...\...\...\...\...\...\...\...\...\.... 5-1
 
-**5.**
 
 1.  **OPERATION**
 
@@ -310,13 +291,6 @@ height="0.7916666666666666in"}
 >
 > HB720 CARTRIDGE TO FDC: IDC 34 pins connector (BOTH SIDES)
 >
-> 33 31 29 27 25 23 21 19 17 15 13 11 9 7 5 3 1
->
-> **o o o o o o o o o o o o o o o o o**
->
-> **o o o o o o o o o o o o o o o o o**
->
-> 34 32 30 28 26 24 22 20 18 16 14 12 10 8 6 4 2
 
   ---------------------------------------------------------------------------------
   Pin   Signal       Pin   Signal         Pin   Signal       Pin No. Signal
@@ -354,15 +328,7 @@ height="0.7916666666666666in"}
     -   To use with 5 ¼", the connector is a card edge;
 
     -   To use with 3 ½" the connector is a 34 pin female IDC.
-
-> 33 31 29 27 25 23 21 19 17 15 13 11 9 7 5 3 1
->
-> **o o o o o o o o o o o o o o o o o**
->
-> **o o o o o o o o o o o o o o o o o**
->
-> 34 32 30 28 26 24 22 20 18 16 14 12 10 8 6 4 2
-
+```
   ---------------------------------------------------------------------------------
   Pin   Signal         Pin   Signal       Pin   Signal      Pin    Signal
   No.                  No.                No.               No.    
@@ -394,6 +360,7 @@ height="0.7916666666666666in"}
   9     GNDD (RETURN)  18    DIRECTION    27    GNDD        None   NONE
                                                 (RETURN)           
   ---------------------------------------------------------------------------------
+```
 
 ## **THEORY OF OPERATION** {#theory-of-operation .list-paragraph}
 
