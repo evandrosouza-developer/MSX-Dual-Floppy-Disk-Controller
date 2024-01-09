@@ -485,7 +485,6 @@ retained intact.
 
 ![](media/image23.png)
 
-![](media/image24.png)
 ## **HB720 Boards**
 
 **SCHEMATIC DIAGRAM AND PRINTED CIRCUIT BOARD**
