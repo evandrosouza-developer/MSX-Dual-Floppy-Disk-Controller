@@ -513,8 +513,6 @@ retained intact.
 
 ![](media/image40.png)
 
-![](media/image42.png)
-
 ![](media/image44.png)
 
 ![](media/image46.png)
