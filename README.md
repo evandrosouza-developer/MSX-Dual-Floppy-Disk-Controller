@@ -177,14 +177,11 @@ Settling time : 30 msec
 
 WD2793-02
 
-![](media/image5.jpeg){width="1.864377734033246in"
-height="1.1595089676290464in"}
+![](media/image5.jpeg)
 
-![](media/image6.png){width="2.35625in"
-height="1.2048611111111112in"}
+![](media/image6.png)
 
-![](media/image7.png){width="2.2715277777777776in"
-height="1.448611111111111in"}
+![](media/image7.png)
 
 Total no. of cylinders Total no. of tracks Recording method Disk
 rotation speed Data transfer rate Average latency time Access time
@@ -201,8 +198,7 @@ United Kingdom model 25W
 
 European model 24 W
 
-![](media/image8.png){width="1.2458672353455817in"
-height="1.2826443569553805in"}Brazilian model 16W
+![](media/image8.png)Brazilian model 16W
 
 10^o^C-35°C (50^o^F-95°F) 160 x 67 x 260 mm (w/h/d)
 
@@ -229,8 +225,7 @@ the wires.
 •As a safety precaution, do not connect the power cord until all other
 connections have been completed.
 
-![](media/image9.png){width="2.5993055555555555in"
-height="2.7604166666666665in"}
+![](media/image9.png)
 
 MSX-Disk BASIC is stored in ROM (read-only memory) within the inter­face
 cartridge of HBD-50.
@@ -239,8 +234,7 @@ When the interface cartridge is inserted into the cartridge slot of the
 com­puter, Disk BASIC is started up by simply switching on the power of
 the disk drive unit and the computer.
 
-![](media/image10.png){width="2.15625in"
-height="0.9611111111111111in"}
+![](media/image10.png)
 
 1.  Insert the interface cartridge.
 
@@ -258,8 +252,7 @@ height="0.9611111111111111in"}
     will display the follow­ing message which indicates the Disk-BASIC
     has "signed on".
 
-![](media/image11.png){width="1.6930555555555555in"
-height="0.47152777777777777in"}
+![](media/image11.png
 
 **Precautions**
 
@@ -275,15 +268,13 @@ push it *in until you hear* a click.
 
 1\) With MSX Disk-BASIC, date data set in this situation is not used.
 
-![](media/image12.png){width="2.1118055555555557in"
-height="1.0416666666666667in"}
+![](media/image12.png)
 
 **Removing the disk**
 
 Press this button.
 
-![](media/image13.png){width="1.9583333333333333in"
-height="0.7916666666666666in"}
+![](media/image13.png)
 
 > []{#bookmark16 .anchor}**1-7. PIN ASSIGNMENT OF THE CONNECTORS**
 >
@@ -292,6 +283,7 @@ height="0.7916666666666666in"}
 > HB720 CARTRIDGE TO FDC: IDC 34 pins connector (BOTH SIDES)
 >
 
+  ```
   ---------------------------------------------------------------------------------
   Pin   Signal       Pin   Signal         Pin   Signal       Pin No. Signal
   No.                No.                  No.                        
@@ -319,6 +311,7 @@ height="0.7916666666666666in"}
   9     GNDD         18    FDC_D0         27    GNDD          None   NONE
         (RETURN)                                (RETURN)             
   ---------------------------------------------------------------------------------
+  ```
 
 > HB720 FDC TO EXT FLOPPPY DRIVE -- Edge card connector (34 pins)
 
