@@ -94,9 +94,9 @@ FDC BOARD SCHEMATICS....................................................
 
 1.  **OPERATION**
 
-> ![](media/image4.jpeg){width="1.5072856517935258in"
-> height="1.1582185039370079in"}[]{#bookmark4 .anchor} **1-3. PARTS
-> IDENTIFICATION**
+> ![](media/image4.jpeg)[]{#bookmark4 .anchor}
+>
+> **1-3. PARTS IDENTIFICATION**
 
 The HBD-50 floppydisk drive unit allows 3 1/2-inch micro floppydisks to
 be used with an MSX standard computer.
@@ -365,8 +365,7 @@ This board cartridge uses the MSX computer cartridge slot. Addresses
 4000H through 7FFFH on the memory map have been allocated to the HB720
 cartridge.
 
-![](media/image14.png){width="2.6645833333333333in"
-height="1.398611111111111in"}
+![](media/image14.png)
 
 **2-1-2. Selection by HB720 Cartridge**
 
@@ -382,8 +381,7 @@ Individual registers of the FDC board have been allocated to the memory
 space for addresses 7FF8H through 7FFFH, and are selected by address
 signals A0 through A2 and signal FDC_CS.
 
-![](media/image15.png){width="2.5443011811023624in"
-height="3.283915135608049in"}
+![](media/image15.png)
 
 **2-2. FDC Board**
 
@@ -395,8 +393,7 @@ Individual registers of the FDC (U4) have been allocated to addresses
 7FF8H through 7FFBH, and are selected by address signals AO through A2
 and signal CS.
 
-> ![](media/image16.png){width="3.3619641294838147in"
-> height="1.0724639107611549in"}
+> ![](media/image16.png)
 >
 > CR (COMMAND REGISTER
 >
@@ -410,8 +407,7 @@ and signal CS.
 >
 > STR (STATUS REGISTER
 
-![](media/image17.png){width="1.968837489063867in"
-height="1.101091426071741in"}
+![](media/image17.png)
 
 > Hl-Z (HIGH IMPEDANCE)
 
@@ -419,8 +415,7 @@ height="1.101091426071741in"}
 
 -   IRQ/DRQ Status - 7FFFH
 
-![](media/image18.png){width="2.4838626421697287in"
-height="0.4348600174978128in"}
+![](media/image18.png)
 
 > IRQ will be made \"0\" when the completion of a command has been
 > either concluded or terminated during process.
@@ -429,8 +424,7 @@ height="0.4348600174978128in"}
 
 -   Drive Select - 7FFDH
 
-> ![](media/image19.png){width="3.45625in"
-> height="2.1951388888888888in"}
+> ![](media/image19.png)
 
 -   Side Select - 7FFCH
 
@@ -489,373 +483,41 @@ with each other, the read or write operation will duly be carried out.
 When under a read address command, the ID field track number will be
 retained intact.
 
-![](media/image21.png){width="11.136805555555556in"
-height="6.745833333333334in"}
+![](media/image23.png)
 
-![](media/image23.png){width="10.502777777777778in"
-height="5.811594488188977in"}
-
-![](media/image24.png){width="5.659027777777778in"
-height="2.963888888888889in"}
-
+![](media/image24.png)
 ## **HB720 Boards**
 
 **SCHEMATIC DIAGRAM AND PRINTED CIRCUIT BOARD**
 
 **CARTRIDGE BOARD - COMPONENT SIDE**
 
-![](media/image25.jpeg){width="2.4713385826771654in"
-height="1.6156911636045495in"}
+![](media/image25.jpeg)
 
-![](media/image26.png){width="2.4966786964129484in"
-height="1.617321741032371in"}
+![](media/image26.png)
 
-![](media/image28.png){width="2.380028433945757in"
-height="1.6680555555555556in"}
+![](media/image28.png)
 
-![](media/image30.png){width="2.4713188976377953in"
-height="1.6173556430446194in"}
+![](media/image30.png
 
-![](media/image32.png){width="2.476933508311461in"
-height="1.6242038495188102in"}
+![](media/image32.png)
 
 ## CARTRIDGE BOARD -- SCHEMATICS
 
-![](media/image35.png){width="10.133090551181102in"
-height="7.170369641294839in"}
+![](media/image35.png)
 
-FDC Board PCB & Schematics
+# FDC Board PCB & Schematics
 
-![](media/image37.png){width="3.570551181102362in"
-height="1.8697845581802275in"}
+![](media/image37.png)
 
-![](media/image38.png){width="2.7089107611548555in"
-height="1.630051399825022in"}
+![](media/image38.png)
 
-![](media/image40.png){width="2.710518372703412in"
-height="1.5143438320209974in"}
+![](media/image40.png)
 
-![](media/image42.png){width="7.0055555555555555in"
-height="4.9534722222222225in"}
+![](media/image42.png)
 
-![](media/image44.png){width="2.673632983377078in"
-height="1.5597779965004375in"}
+![](media/image44.png)
 
-![](media/image46.png){width="2.628765310586177in"
-height="1.5460115923009623in"}
+![](media/image46.png)
 
-![](media/image48.png){width="11.100971128608924in"
-height="7.855201224846894in"}
-
-## **SEMICONDUCTOR** **PIN ASSIGNME*N*TS**
-
-MB74LS04 (FUJITSU)
-
-SN74LS04N \^Tl) TTL INVERTER --- TOP VIEW ---
-
-MB74LS14 (FUJITSU)
-
-SN74LS14N (Tl)
-
-TTL SCHMITT TRIGGER INVERTER --- TOP VIEW ---
-
-M532O6P (MITSUBISHI)
-
-SN74O6N (Tl)
-
-TTL INVERTER BUFFER/DRIVER WITH OPEN-COLLECTOR --- TOP VIEW ---
-
-SN74O7N (Tl)
-
-TTL BUFFER/DRIVER WITH OPEN-COLLECTOR --- TOP VIEW ---
-
-SN74LS10N (Tl)
-
-TTL 3-INPUT POSITIVE NAND GATE --- TOP VIEW ---
-
-0; LOW LEVEL\
-***UHIGH*** LEVEL
-
-Y = A
-
-**H**O;LOW LEVEL
-
-1 ; HIGH LEVEL
-
-\*;OPEN COLLECTOR
-
-Y = A
-
-0 LOW LEVEL
-
-1 ; HIGH LEVEL
-
-\* ; OPEN COLLECTOR
-
-MB74LS32 (FUJITSU)
-
-SN74LS32N (Tl)
-
-TTL 2-INPUT POSITIVE-OR GATE --- TOP VIEW ---
-
-MB74LS38 (FUJITSU)
-
-SN7438N (Tl)
-
-SN74LS38N (Tl)
-
-TTL 2-INPUT POSITIVE-NAND GATE BUFFER WITH OPEN-COLLECTOR --- TOP VIEW
----
-
-MB74LS74A (FUJITSU)
-
-SN74LS74AN (Tl)
-
-TTL D-TYPE FLIP FLOP WITH DIRECT SET/RESET --- TOP VIEW ---
-
-\[w\] F?\] \[7;\] H \[ipl M lei
-
-»V IN
-
-SN7414N 0.9 1.7 V
-
-SN74LS14N\--0.8 1.6V
-
-Y=AB=A+B
-
-[A]{.underline} \_B Y.
-
-0; LOW LEVEL
-
-\_L£ ± 1 ; HIGH LEVEL
-
-[^1^ H l°l]{.underline} \* ; OPEN COLLECTOR
-
-  --------- -------- -------- -------- ------------------ -----------------
-  INPUTS                               OUTPUTS            
-
-  SD        RolCK             D        Qn+1               Qn+1
-
-  0         1        x        x        1                  0
-
-  1         0        X        X        0                  1
-
-  0         0        X        X        1 \*               1 \*
-
-  1         1                 1        1                  0
-
-  1         1        J^-^     0        0                  
-
-  1         1        0        X        On                 On
-  --------- -------- -------- -------- ------------------ -----------------
-
-0;L0W LEVEL 1 ; HIGH LEVEL X; DON'T CARE 1\*; NONSTABLE
-
-![](media/image50.png){width="1.148611111111111in"
-height="0.69375in"}![](media/image51.png){width="1.1604166666666667in"
-height="0.6965277777777777in"}![](media/image52.png){width="1.1659722222222222in"
-height="0.69375in"}![](media/image53.png){width="1.1881944444444446in"
-height="0.7416666666666667in"}![](media/image54.png){width="0.2777777777777778in"
-height="0.13472222222222222in"}![](media/image55.png){width="0.8541666666666666in"
-height="0.9916666666666667in"}![](media/image56.png){width="1.16875in"
-height="0.6965277777777777in"}![](media/image57.png){width="1.1659722222222222in"
-height="0.69375in"}![](media/image58.png){width="1.16875in"
-height="0.69375in"}![](media/image59.png){width="1.148611111111111in"
-height="0.6013888888888889in"}![](media/image60.png){width="0.6715277777777777in"
-height="0.12083333333333333in"}![](media/image61.png){width="0.7104166666666667in"
-height="0.55625in"}![](media/image62.png){width="0.7868055555555555in"
-height="0.7361111111111112in"}
-
-![](media/image63.png){width="1.7854166666666667in"
-height="1.1868055555555554in"}![](media/image64.png){width="1.1770833333333333in"
-height="0.725in"}![](media/image65.png){width="0.3861111111111111in"
-height="0.6972222222222222in"}![](media/image66.png){width="0.9416666666666667in"
-height="0.3638888888888889in"}![](media/image67.png){width="2.2576388888888888in"
-height="1.6284722222222223in"}![](media/image68.png){width="0.7854166666666667in"
-height="1.4493055555555556in"}![](media/image69.png){width="0.41388888888888886in"
-height="0.7701388888888889in"}![](media/image70.png){width="2.0104166666666665in"
-height="0.64375in"}
-
-![](media/image71.png){width="1.6284722222222223in"
-height="0.7451388888888889in"}SN74ALS133N (Tl)
-
-MB74LS139 (FUJITSU)
-
-SN74LS139N (Tl)
-
-TTL 2-T0-4-LINE DECOOER/DEMULTIPLEXER --- TOP VIEW ---
-
-MB74LS1 75 (FUJITSU)
-
-SN74LS175N (Tl)
-
-TTL O-TYPE FLIP-FLOP WITH CLEAR --- TOP VIEW ---
-
-MB74LS244 (FUJITSU)
-
-SN74LS244N (Tl)
-
-TTL 3-STATE SCHMITT TRIGGER BUFFER/DRIVER --- TOP VIEW ---
-
-HN48271 28G-25 (HITACHI) (ACCESS TIME = 250nS) HN4827128G-30 (HITACHI)
-(ACCESS TIME = 300nS) HN4827128G-45 (HITACHI) (ACCESS TIME = 450nS)
-N-MOS ERASABLE AND PROGRAMMABLE ROM 128K-BIT \<16384x8) --- TOP VIEW ---
-
-WD2793-02 (WESTERN DIGITAL)
-
-N CHANNEL E/D MOS FLOPPY DISK FORMATTER/CONTROLLER --- TOP VIEW ---
-
-  --------- -------- --------------------------------- -------- -----------
-            E        VPP VOD                                    
-
-  Al 2      E                                                   PGM
-
-  A7        U                                                   A13
-
-  A6        \[5                                                 A 8
-
-  AS                                                            A 9
-
-  A4                                                            Al 1
-
-  A3        E                                                   OE
-
-  A2                                                   21\]     A10
-
-  Al        \[I                                        g        CE
-
-  AO        Eo                                         g        D7
-
-  DO        Ei                                                  06
-
-  DI        13                                         13       D5
-
-  D2        E                                          13       D4
-
-            E        GNO                               \<3      03
-  --------- -------- --------------------------------- -------- -----------
-
-o [;low level]{.smallcaps}
-
-1 [;high level]{.smallcaps} x [;don't care]{.smallcaps}
-
-  --------- ----- ----------------------------- ------ --------------------
-  ENP       £     \'o\'                                HLT
-
-  WE        E                                          IRQ
-
-  CS        E                                   38\|   DRQ
-
-  RE        E                                   53     ODEN
-
-  AO        E                                   E\)    WP RT
-
-  Al        E                                   35\|   [7p]{.smallcaps}
-
-  DALO      □                                          TROO
-
-  DALI      E                                          WPW
-
-  0AL2      E                                   3      READY
-
-  DAL3      E                                   53     WD
-
-  DAL4      E                                          WG
-
-  DALS      E                                   29\]   TG43
-
-  DAL6      E                                   28\]   HLD
-
-  DAL7      E                                          RAW READ
-
-  STEP      Ei                                  g      VCO
-
-  DIRC      E                                   g      ENMF
-
-  5/8       E                                   24\]   CLK
-
-  RPW       E                                   g      PUMP
-
-  MR        E                                   22\]   TEST
-
-            E     GND Vcc                       23     
-  --------- ----- ----------------------------- ------ --------------------
-
-CS ***;CHIP*** SELECT
-
-DALO-7 JDATA ACCESS LINES DDEN iDOUBLE DENSITY
-
-DIRC '.DIRECTION
-
-DRO ;DATA REQUEST
-
-ENMF iENABLE MINI-FLOPPY
-
-ENP J ENABLE PRECOMP
-
-HLD » HEAD LOAD
-
-HLT i HEAD LOAD TIMING
-
-IP ;INDEX PULSE
-
-IRQ \'.\'INTERRUPT REQUEST
-
-MR i MASTER RESET
-
-RE । READ ENABLE
-
-***RPW ! READ PULSE*** WIDTH
-
-TG43 I TRACK GREATER THAN43
-
-TROO : TRACK 00
-
-VCO : VOLTAGE-CONTROLLED OSC
-
-WD t WRITE DATA
-
-WE i WRITE ENABLE
-
-WG 'WRITE GATE
-
-WPRT 1 WRITE PROTECT
-
-WPW t WRITE PRECOMP WIDTH
-
-AO-13 ; ADDRESS INPUT CE ; CHIP ENABLE DO-7 ; DATA
-
-OE I OUTPUT ENABLE PGM ; PROGRAM
-
-CR COMMAND REGISTER
-
-DR [;data]{.smallcaps} REGISTER DSR iOATA SHIFT REGISTER SCR SECTOR
-REGISTER TR \'.TRACK REGISTER STR \'.STATUS REGISTER
-
-  --------- -------- -------- --------------------- ----------------------
-  CS        A 1      AO       RE = 0                WE = 0
-
-  1         X        X        NON SELECT            OAL = HI-Z
-
-  0         0        0        STR                   C R
-
-  0         0        1        TR                    TR
-
-  0         1        0        SCR                   SCR
-
-  0         1        1        DR                    OR
-  --------- -------- -------- --------------------- ----------------------
-
-REGISTER SELECTION
-
-0 ;LOW LEVEL
-
-1 I HIGH LEVEL X ; DON'T CARE Hl-Z; HIGH IMPEDANCE
-
-**HB720**
-
-![](media/image72.png){width="0.5701388888888889in"
-height="1.2215277777777778in"}![](media/image73.png){width="1.8125in"
-height="1.4430555555555555in"}![](media/image74.png){width="1.1111111111111112in"
-height="2.058333333333333in"}![](media/image75.png){width="2.2930555555555556in"
-height="2.2402777777777776in"}
+![](media/image48.png)
