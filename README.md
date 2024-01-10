@@ -122,6 +122,8 @@ Individual registers of the FDC board have been allocated to the memory space fo
 
 **2-2-1. Memory Map Detailed**
 
+![](media/2-2-1.png)
+
 **2-2-2. Selection of Individual FDC chip Registers**
 
 Individual registers of the FDC (U4) have been allocated to addresses
