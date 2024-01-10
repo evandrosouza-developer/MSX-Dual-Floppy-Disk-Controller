@@ -2,7 +2,7 @@
 
 **HB720**
 
-***Based on Memory Mapped Registers***
+***Based on Memory Mapped I/O Registers***
 
 **Compatible with:**
 
