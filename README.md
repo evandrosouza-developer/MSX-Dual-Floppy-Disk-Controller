@@ -116,7 +116,7 @@ When the HB720 cartridge has been inserted into the MSX computer cartridge slot,
 
 Individual registers of the FDC board have been allocated to the memory space for addresses 7FF8H through 7FFFH, and are selected by address signals A0 through A2 and signal FDC_CS.
 
-![](media/image15.png)
+![](media/3-1-3.png)
 
 **2-2. FDC Board**
 
