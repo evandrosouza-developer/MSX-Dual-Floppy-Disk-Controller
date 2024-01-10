@@ -200,8 +200,8 @@ this register.
 -   Track Register (TR) - 7FF9H
 
 This is an 8-bit read/write register. The low-high transition of MR
-(master reset) will set TR at FFH. When TROO becomes low, TR will be
-made OOH.
+(master reset) will set TR at FFH. When TR00 becomes low, TR will be
+made 00H.
 
 The track number at which the head is located will usually be set in
 this register. At WD2793-02, this value may either be updated or not,
