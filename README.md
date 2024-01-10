@@ -235,7 +235,7 @@ retained intact.
 
 ![](media/image25.jpeg)
 
-## CARTRIDGE BOARD -- SCHEMATICS
+## CARTRIDGE BOARD SCHEMATICS
 
 ![](media/image35.png)
 
