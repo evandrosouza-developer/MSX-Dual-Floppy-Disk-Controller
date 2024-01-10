@@ -110,17 +110,11 @@ cartridge.
 
 **2-1-2. Selection by HB720 Cartridge**
 
-> When the HB720 cartridge has been inserted into the MSX computer
-> cartridge slot, addresses 4000H through 7FFFH will be selected by the
-> cartridge connector signal CS1. In addition, U1 will AND signal SLTSL
-> and the ICS (address decoder) output that has been inverted by U1, and
-> will provide an output to U5 (ROM) pin CE for selection of the ROM.
+When the HB720 cartridge has been inserted into the MSX computer cartridge slot, addresses 4000H through 7FFFH will be selected by the cartridge connector signal CS1. In addition, U1 will AND signal SLTSL and the U6 (address decoder) output that has been inverted by U8, and will provide an output to U5 (ROM) pin CE for selection of the ROM.
 
 **2-1-3. Selection by FDC Controller**
 
-Individual registers of the FDC board have been allocated to the memory
-space for addresses 7FF8H through 7FFFH, and are selected by address
-signals A0 through A2 and signal FDC_CS.
+Individual registers of the FDC board have been allocated to the memory space for addresses 7FF8H through 7FFFH, and are selected by address signals A0 through A2 and signal FDC_CS.
 
 ![](media/image15.png)
 
