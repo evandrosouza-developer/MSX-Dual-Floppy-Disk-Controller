@@ -67,34 +67,21 @@
 
 **3. BLOCK DIAGRAM**
 
-OVERALL......................3-1
+OVERALL BLOCK DIAGRAM
 
 **4. SCHEMATIC DIAGRAM AND PRINTED CIRCUIT BOARD**
 
-HB720 BOARDS ............ 4-1
+CARTRIDGE BOARD PCB 3D VIEW
 
-CARTRIDGE BOARD
-PCB............................................\.........\...4-1
+CARTRIDGE BOARD Schematics
 
-CARTRIDGE BOARD Schematics................
-..........................\... 4-2
+FDC BOARD PCB 3D VIEW
 
-FDC BOARD
-PCB..................................................................
-4-3
-
-FDC BOARD SCHEMATICS....................................................
-4-4
-
-
-**5. SCHEMATIC DIAGRAM AND PRINTED CIRCUIT BOARD**..
-\...\...\...\...\...\...\....
-\...\...\...\...\...\...\...\...\...\...\.... 5-1
+FDC BOARD SCHEMATICS
 
 
 1.  **OPERATION**
 
-> ![](media/image4.jpeg)[]
 >
 > **1-3. PARTS IDENTIFICATION**
 
@@ -131,7 +118,7 @@ Standard DOS routines
 
 MSX-Disk BASIC Utility routines
 
-\+ 5 V, 300 mA or less
++ 5 V, 300 mA or less
 
 **Drive Section**
 
@@ -141,7 +128,7 @@ Disk type
 
 Recording capacity
 
-5¼" and 3^1^/~2~\" floppy disk
+5¼" and 3 1/2" floppy disk
 
 Single and Double-sided
 
@@ -177,12 +164,6 @@ Settling time : 30 msec
 
 WD2793-02
 
-![](media/image5.jpeg)
-
-![](media/image6.png)
-
-![](media/image7.png)
-
 Total no. of cylinders Total no. of tracks Recording method Disk
 rotation speed Data transfer rate Average latency time Access time
 
@@ -198,9 +179,9 @@ United Kingdom model 25W
 
 European model 24 W
 
-![](media/image8.png)Brazilian model 16W
+Brazilian model 16W
 
-10^o^C-35°C (50^o^F-95°F) 160 x 67 x 260 mm (w/h/d)
+10°C-35°C (50°F-95°F) 160 x 67 x 260 mm (w/h/d)
 
 For the drive unit only, including the projecting parts
 
@@ -212,71 +193,7 @@ Blank disk (1)
 
 Disk labels (3)
 
-}**1-6. STARTING UP MSX-DISK BASIC**
-
-**Notes on connection**
-
-**eSet** the POWER switch of the device to be connected to OFF.
-Connec­ting the device while its power is ON may damage the internal
-circuitry. eWhen disconnecting the connector or cartridge, be sure to
-take hold of the plug or the cartridge. Pulling on the cord may break
-the wires.
-
-•As a safety precaution, do not connect the power cord until all other
-connections have been completed.
-
-![](media/image9.png)
-
-MSX-Disk BASIC is stored in ROM (read-only memory) within the inter­face
-cartridge of HBD-50.
-
-When the interface cartridge is inserted into the cartridge slot of the
-com­puter, Disk BASIC is started up by simply switching on the power of
-the disk drive unit and the computer.
-
-![](media/image10.png)
-
-1.  Insert the interface cartridge.
-
-2.  Set the POWER switch of HBD-50 to ON.
-
-3.  Set the POWER switch of the computer to ON.
-
-> When Disk-BASIC begins operating, the following message is displayed
-> on the screen :
-
-4.  Enter the year, month, and date using two digits per entry (and
-    con­necting each entry by a hyphen) or simply press the
-    [[\[Return]{.smallcaps}\|]{.underline} key^1^). When the
-    [[\[return]{.underline}\]]{.smallcaps} key is pressed, the screen
-    will display the follow­ing message which indicates the Disk-BASIC
-    has "signed on".
-
-![](media/image11.png
-
-**Precautions**
-
-Be sure to switch on the power of the drive unit before that of the
-com­puter. If the computer has been turned on first, either press the
-RESET button of the computer or set the POWER switch of the computer to
-OFF, then to ON.
-
-**1-5. INSERTING A DISK**
-
-Without opening the metal disk guard, insert the floppy­disk and gently
-push it *in until you hear* a click.
-
-1\) With MSX Disk-BASIC, date data set in this situation is not used.
-
-![](media/image12.png)
-
-**Removing the disk**
-
-Press this button.
-
-![](media/image13.png)
-
-**1-7. PIN ASSIGNMENT OF THE CONNECTORS**
+** PIN ASSIGNMENT OF THE CONNECTORS**
 >
 > **Pin Assignment of the Connectors**
 >
