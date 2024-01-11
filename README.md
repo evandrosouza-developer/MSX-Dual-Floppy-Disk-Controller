@@ -1,8 +1,12 @@
+<div align="center">
+
 **MSX Dual Disk Drive Controller**
 
 **HB720**
 
 ***Based on Memory Mapped I/O Registers***
+
+</div>
 
 **Compatible with:**
 
@@ -17,6 +21,9 @@
 ***Based on MSXHans, 2001 PDF***
 
 ***By Evandro Souza 2024, January.***
+  
+
+---
 ** PIN ASSIGNMENT OF THE CONNECTORS**
 >
 > **Pin Assignment of the Connectors**
@@ -94,6 +101,7 @@
   9     GNDD (RETURN)  18    DIRECTION    27    GNDD        None   NONE
                                                 (RETURN)           
   ---------------------------------------------------------------------------------
+  
 ```
 
 ## **THEORY OF OPERATION**
@@ -199,9 +207,12 @@ This is an 8-bit read/write register. In the case of a read data command or a wr
 
 When under a read address command, the ID field track number will be retained intact.
 
+---
+
 ## **OVERALL BLOCK DIAGRAM**
 ![](media/OVERALL_BlockP_Diagram.png)
 
+---
 ## **HB720 Boards**
 
 **SCHEMATIC DIAGRAM AND PRINTED CIRCUIT BOARD**
