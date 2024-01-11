@@ -144,7 +144,12 @@ STR (STATUS REGISTER
 
 ![](media/image17.png)
 
+0    (LOW LEVEL)
+
+1    (HIGH LEVEL)
+
 HI-Z (HIGH IMPEDANCE)
+
 
 **2-2-3. Operation of Individual Registers**
 
