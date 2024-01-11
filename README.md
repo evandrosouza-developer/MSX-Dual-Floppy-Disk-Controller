@@ -167,8 +167,7 @@ and signal CS.
 
 DATA BIT
 
-> ![](media/image20.png){width="2.7291852580927385in"
-> height="0.39641732283464565in"}
+> ![](media/image20.png)
 
 At \"0\", side 0 will be selected, and at \"1\", side 1 will be selected
 
@@ -221,7 +220,7 @@ When under a read address command, the ID field track number will be
 retained intact.
 
 ## **OVERALL BLOCK DIAGRAM**
-![](media/image23.png)
+![](media/OVERALL_BlockP_Diagram.png)
 
 ## **HB720 Boards**
 
@@ -229,7 +228,7 @@ retained intact.
 
 **CARTRIDGE BOARD - 3D VIEW**
 
-![](media/image25.jpeg)
+![](media/HB720-Cart.png)
 
 ## CARTRIDGE BOARD SCHEMATICS
 
@@ -237,7 +236,7 @@ retained intact.
 
 **FDC Board - 3D VIEW**
 
-![](media/image37.png)
+![](media/HB720-FDC.png)
 
 ## FDC Board Schematics
 
