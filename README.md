@@ -126,27 +126,25 @@ Individual registers of the FDC board have been allocated to the memory space fo
 
 **2-2-2. Selection of Individual FDC chip Registers**
 
-Individual registers of the FDC (U4) have been allocated to addresses
-7FF8H through 7FFBH, and are selected by address signals AO through A2
-and signal CS.
+Individual registers of the FDC (U4) have been allocated to addresses 7FF8H through 7FFBH, and are selected by address signals AO through A2 and signal CS.
 
-> ![](media/image16.png)
->
-> CR (COMMAND REGISTER
->
-> DR (DATA REGISTER
->
-> DSR (DATA SHIFT REGISTER
->
-> SCR (SECTOR REGISTER
->
-> TR (TRACK REGISTER
->
-> STR (STATUS REGISTER
+![](media/image16.png)
+
+CR (COMMAND REGISTER
+
+DR (DATA REGISTER
+
+DSR (DATA SHIFT REGISTER
+
+SCR (SECTOR REGISTER
+
+TR (TRACK REGISTER
+
+STR (STATUS REGISTER
 
 ![](media/image17.png)
 
-> Hl-Z (HIGH IMPEDANCE)
+HI-Z (HIGH IMPEDANCE)
 
 **2-2-3. Operation of Individual Registers**
 
@@ -154,9 +152,7 @@ and signal CS.
 
 ![](media/image18.png)
 
-> IRQ will be made \"0\" when the completion of a command has been
-> either concluded or terminated during process.
->
+> IRQ will be made \"0\" when the completion of a command has been > either concluded or terminated during process.
 > DRQ will be made \"0\" when the data write/read are being requested.
 
 -   Drive Select - 7FFDH
@@ -173,51 +169,29 @@ At \"0\", side 0 will be selected, and at \"1\", side 1 will be selected
 
 -   Command Register (CR) - 7FF8H
 
-This is an 8-bit write register, where the commands that correspond to
-the WD2793-02 operation will be written from the processor.
+This is an 8-bit write register, where the commands that correspond to the WD2793-02 operation will be written from the processor.
 
-With the exception of a forced interrupt command, the command writing
-operation takes place after completion of the previous WD2793-02
-command.
+With the exception of a forced interrupt command, the command writing operation takes place after completion of the previous WD2793-02 command.
 
 -   Status Register (STR) - 7FF8H
 
-This is an 8-bit read register. This register indicates the WD2793-02
-internal status, the command execution processed status, and the disk
-drive status. The significance of individual bits will vary depending on
-whether the command is being executed or the command execution has
-already been concluded.
+This is an 8-bit read register. This register indicates the WD2793-02 internal status, the command execution processed status, and the disk drive status. The significance of individual bits will vary depending on whether the command is being executed or the command execution has already been concluded.
 
 -   Data Register (DR) - 7FFBH
 
-This is a read/write register. In a disk reading mode, the data read of
-the disk will be loaded into this register. In a disk writing mode, the
-data that has been written earlier into this register will be written
-into the disk. In a seek mode, the target track address will be written
-this register.
+This is a read/write register. In a disk reading mode, the data read of the disk will be loaded into this register. In a disk writing mode, the data that has been written earlier into this register will be written into the disk. In a seek mode, the target track address will be written this register.
 
 -   Track Register (TR) - 7FF9H
 
-This is an 8-bit read/write register. The low-high transition of MR
-(master reset) will set TR at FFH. When TR00 becomes low, TR will be
-made 00H.
+This is an 8-bit read/write register. The low-high transition of MR (master reset) will set TR at FFH. When TR00 becomes low, TR will be made 00H.
 
-The track number at which the head is located will usually be set in
-this register. At WD2793-02, this value may either be updated or not,
-depending on the command. In the case of a read data command or a write
-data command, the contents of this register will be compared with an ID
-field track number read of the disk, and when they coincide with each
-other, the read or write operation will duly be carried out.
+The track number at which the head is located will usually be set in this register. At WD2793-02, this value may either be updated or not, depending on the command. In the case of a read data command or a write data command, the contents of this register will be compared with an ID field track number read of the disk, and when they coincide with each other, the read or write operation will duly be carried out.
 
 -   Sector Register (SCR) - 7FFAH
 
-This is an 8-bit read/write register. In the case of a read data command
-or a write data command, the contents of this register will be compared
-with an ID field track number read of the disk, and when they coincide
-with each other, the read or write operation will duly be carried out.
+This is an 8-bit read/write register. In the case of a read data command or a write data command, the contents of this register will be compared with an ID field track number read of the disk, and when they coincide with each other, the read or write operation will duly be carried out.
 
-When under a read address command, the ID field track number will be
-retained intact.
+When under a read address command, the ID field track number will be retained intact.
 
 ## **OVERALL BLOCK DIAGRAM**
 ![](media/OVERALL_BlockP_Diagram.png)
