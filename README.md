@@ -143,11 +143,8 @@ TR (TRACK REGISTER
 STR (STATUS REGISTER
 
 ![](media/image17.png)
-
 0    (LOW LEVEL)
-
 1    (HIGH LEVEL)
-
 HI-Z (HIGH IMPEDANCE)
 
 
