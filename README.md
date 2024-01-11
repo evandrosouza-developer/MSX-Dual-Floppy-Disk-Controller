@@ -236,7 +236,7 @@ retained intact.
 
 **FDC Board - 3D VIEW**
 
-![](media/HB720-FDC.png)
+![](media/HB720_FDC.png)
 
 ## FDC Board Schematics
 
