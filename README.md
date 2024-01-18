@@ -22,86 +22,11 @@
 
 ***By Evandro Souza 2024, January.***
   
-
 ---
-** PIN ASSIGNMENT OF THE CONNECTORS**
->
-> **Pin Assignment of the Connectors**
->
-> HB720 CARTRIDGE TO FDC: IDC 34 pins connector (BOTH SIDES)
->
 
-  ```
-  ---------------------------------------------------------------------------------
-  Pin   Signal       Pin   Signal         Pin   Signal       Pin No. Signal
-  No.                No.                  No.                        
-  ----- ------------ ----- -------------- ----- ------------ ------- --------------
-  1     GNDD         10    FDC_RE         19    GNDD         28      FDC_D5
-        (RETURN)                                (RETURN)             
+## **OVERALL BLOCK DIAGRAM**
+![](media/OVERALL_BlockP_Diagram.png)
 
-  2     DRQ          11    GNDD (RETURN)  20    FDC_D1       29      GNDD (RETURN)
-
-  3     N.C.         12    FDC_A0         21    GNDD         30      FDC_D6
-                                                (RETURN)             
-
-  4     IRQ          13    GNDD (RETURN)  22    FDC_D2       31      GNDD (RETURN)
-
-  5     GNDD         14    FDC_A1         23    GNDD         32      FDC_D7
-        (RETURN)                                (RETURN)             
-
-  6     FDC_WE       15    GNDD (RETURN)  24    FDC_D3       33      GNDD (RETURN)
-
-  7     N.C.         16    FDC_A2         25    GNDD         34      RESET
-                                                (RETURN)             
-
-  8     FDC_CS       17    GNDD (RETURN)  26    FDC_D4       None    NONE
-
-  9     GNDD         18    FDC_D0         27    GNDD          None   NONE
-        (RETURN)                                (RETURN)             
-  ---------------------------------------------------------------------------------
-  ```
-
-> HB720 FDC TO EXT FLOPPPY DRIVE -- Edge card connector (34 pins)
-
--   The pinout are the same for 5 ¼" and 3 ½" drives and the cable may
-    have both options:
-
-    -   To use with 5 ¼", the connector is a card edge;
-
-    -   To use with 3 ½" the connector is a 34 pin female IDC.
-```
-  ---------------------------------------------------------------------------------
-  Pin   Signal         Pin   Signal       Pin   Signal      Pin    Signal
-  No.                  No.                No.               No.    
-  ----- -------------- ----- ------------ ----- ----------- ------ ----------------
-  1     DISK CHANGE    10    DRIVE SELECT 19    GNDD        28     WRITE PROTECT
-        RESET                0                  (RETURN)           
-
-  2     DISK CHANGE    11    GNDD         20    STEP        29     GNDD (RETURN)
-                             (RETURN)                              
-
-  3     GNDD (RETURN)  12    DRIVE SELECT 21    GNDD        30     READ DATA
-                             1                  (RETURN)           
-
-  4     IN USE         13    GNDD         22    WRITE DATA  31     GNDD (RETURN)
-                             (RETURN)                              
-
-  5     GNDD (RETURN)  14    DRIVE SELECT 23    GNDD        32     (HEAD SELECT)
-                             2                  (RETURN)           
-
-  6     DRIVE SELECT 3 15    GNDD         24    WRITE GATE  33     GNDD (RETURN)
-                             (RETURN)                              
-
-  7     GNDD (RETURN)  16    MOTOR ON     25    GNDD        34     READY
-                                                (RETURN)           
-
-  8     INDEX          17    GNDD         26    TRACK 00    None   NONE
-                             (RETURN)                              
-
-  9     GNDD (RETURN)  18    DIRECTION    27    GNDD        None   NONE
-                                                (RETURN)           
-  ---------------------------------------------------------------------------------
-  
 ```
 
 ## **THEORY OF OPERATION**
@@ -209,10 +134,6 @@ When under a read address command, the ID field track number will be retained in
 
 ---
 
-## **OVERALL BLOCK DIAGRAM**
-![](media/OVERALL_BlockP_Diagram.png)
-
----
 ## **HB720 Boards**
 
 **SCHEMATIC DIAGRAM AND PRINTED CIRCUIT BOARD**
@@ -232,3 +153,82 @@ When under a read address command, the ID field track number will be retained in
 ## FDC Board Schematics
 
 ![](media/image48.png)
+---
+** PIN ASSIGNMENT OF THE CONNECTORS**
+>
+> **Pin Assignment of the Connectors**
+>
+> HB720 CARTRIDGE TO FDC: IDC 34 pins connector (BOTH SIDES)
+>
+
+  ```
+  ---------------------------------------------------------------------------------
+  Pin   Signal       Pin   Signal         Pin   Signal       Pin No. Signal
+  No.                No.                  No.                        
+  ----- ------------ ----- -------------- ----- ------------ ------- --------------
+  1     GNDD         10    FDC_RE         19    GNDD         28      FDC_D5
+        (RETURN)                                (RETURN)             
+
+  2     DRQ          11    GNDD (RETURN)  20    FDC_D1       29      GNDD (RETURN)
+
+  3     N.C.         12    FDC_A0         21    GNDD         30      FDC_D6
+                                                (RETURN)             
+
+  4     IRQ          13    GNDD (RETURN)  22    FDC_D2       31      GNDD (RETURN)
+
+  5     GNDD         14    FDC_A1         23    GNDD         32      FDC_D7
+        (RETURN)                                (RETURN)             
+
+  6     FDC_WE       15    GNDD (RETURN)  24    FDC_D3       33      GNDD (RETURN)
+
+  7     N.C.         16    FDC_A2         25    GNDD         34      RESET
+                                                (RETURN)             
+
+  8     FDC_CS       17    GNDD (RETURN)  26    FDC_D4       None    NONE
+
+  9     GNDD         18    FDC_D0         27    GNDD          None   NONE
+        (RETURN)                                (RETURN)             
+  ---------------------------------------------------------------------------------
+  ```
+
+> HB720 FDC TO EXT FLOPPPY DRIVE -- Edge card connector (34 pins)
+
+-   The pinout are the same for 5 ¼" and 3 ½" drives and the cable may
+    have both options:
+
+    -   To use with 5 ¼", the connector is a card edge;
+
+    -   To use with 3 ½" the connector is a 34 pin female IDC.
+```
+  ---------------------------------------------------------------------------------
+  Pin   Signal         Pin   Signal       Pin   Signal      Pin    Signal
+  No.                  No.                No.               No.    
+  ----- -------------- ----- ------------ ----- ----------- ------ ----------------
+  1     DISK CHANGE    10    DRIVE SELECT 19    GNDD        28     WRITE PROTECT
+        RESET                0                  (RETURN)           
+
+  2     DISK CHANGE    11    GNDD         20    STEP        29     GNDD (RETURN)
+                             (RETURN)                              
+
+  3     GNDD (RETURN)  12    DRIVE SELECT 21    GNDD        30     READ DATA
+                             1                  (RETURN)           
+
+  4     IN USE         13    GNDD         22    WRITE DATA  31     GNDD (RETURN)
+                             (RETURN)                              
+
+  5     GNDD (RETURN)  14    DRIVE SELECT 23    GNDD        32     (HEAD SELECT)
+                             2                  (RETURN)           
+
+  6     DRIVE SELECT 3 15    GNDD         24    WRITE GATE  33     GNDD (RETURN)
+                             (RETURN)                              
+
+  7     GNDD (RETURN)  16    MOTOR ON     25    GNDD        34     READY
+                                                (RETURN)           
+
+  8     INDEX          17    GNDD         26    TRACK 00    None   NONE
+                             (RETURN)                              
+
+  9     GNDD (RETURN)  18    DIRECTION    27    GNDD        None   NONE
+                                                (RETURN)           
+  ---------------------------------------------------------------------------------
+  
