@@ -27,7 +27,6 @@
 ## **OVERALL BLOCK DIAGRAM**
 ![](media/OVERALL_BlockP_Diagram.png)
 
-```
 
 ## **THEORY OF OPERATION**
 
@@ -137,6 +136,9 @@ When under a read address command, the ID field track number will be retained in
 ## **HB720 Boards**
 
 **SCHEMATIC DIAGRAM AND PRINTED CIRCUIT BOARD**
+
+To both boards, I have make availability of full Gerber files to order the PCB's to manufacturers. They are all inside gerber directory.
+
 
 **CARTRIDGE BOARD - 3D VIEW**
 
