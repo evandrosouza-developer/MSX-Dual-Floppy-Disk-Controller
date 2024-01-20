@@ -24,21 +24,15 @@
   
 ---
 
+## **THEORY OF OPERATION**
+
 ## **OVERALL BLOCK DIAGRAM (MSX-DOS 1.X VERSION)**
 ![](media/OVERALL_BlockP_Diagram.png)
 
 
----
-
-## **OVERALL BLOCK DIAGRAM (MSX-DOS 2.X VERSION)**
-![](media/OVERALL_DOS2_Block_Diagram.png)
-
-
-## **THEORY OF OPERATION**
-
 ## **2-1. Cartridge Board**
 
-##***2-1-1. MSX-DOS 1.X Version => Compatible with all MSX machines***
+## **2-1-1. MSX-DOS 1.X Version => Compatible with all MSX machines**
 
 **2-1-1-1. Memory Map**
 
@@ -60,7 +54,13 @@ Individual registers of the FDC board have been allocated to the memory space fo
 
 ![](media/2-2-1.png)
 
-##**2-1-2. MSX-DOS 2.X Version => Compatible with MSX 2.0 and up with Memmory Mapper machines**
+---
+
+## **OVERALL BLOCK DIAGRAM (MSX-DOS 2.X VERSION)**
+![](media/OVERALL-DOS2-Block-Diagram.png)
+
+
+## **2-1-2. MSX-DOS 2.X Version => Compatible with MSX 2.0 and up with Memmory Mapper machines**
 
 **2-1-2-1. Memory Map**
 
@@ -114,25 +114,6 @@ STR (STATUS REGISTER
 
 **2-2-2. Operation of Individual Registers**
 
--   IRQ/DRQ Status - 7FFFH
-
-![](media/image18.png)
-
-> IRQ will be made \"0\" when the completion of a command has been > either concluded or terminated during process.
-> DRQ will be made \"0\" when the data write/read are being requested.
-
--   Drive Select - 7FFDH
-
-> ![](media/image19.png)
-
--   Side Select - 7FFCH
-
-DATA BIT
-
-> ![](media/image20.png)
-
-At \"0\", side 0 will be selected, and at \"1\", side 1 will be selected
-
 -   Command Register (CR) - 7FF8H
 
 This is an 8-bit write register, where the commands that correspond to the WD2793-02 operation will be written from the processor.
@@ -142,10 +123,6 @@ With the exception of a forced interrupt command, the command writing operation 
 -   Status Register (STR) - 7FF8H
 
 This is an 8-bit read register. This register indicates the WD2793-02 internal status, the command execution processed status, and the disk drive status. The significance of individual bits will vary depending on whether the command is being executed or the command execution has already been concluded.
-
--   Data Register (DR) - 7FFBH
-
-This is a read/write register. In a disk reading mode, the data read of the disk will be loaded into this register. In a disk writing mode, the data that has been written earlier into this register will be written into the disk. In a seek mode, the target track address will be written this register.
 
 -   Track Register (TR) - 7FF9H
 
@@ -159,6 +136,32 @@ This is an 8-bit read/write register. In the case of a read data command or a wr
 
 When under a read address command, the ID field track number will be retained intact.
 
+-   Data Register (DR) - 7FFBH
+
+This is a read/write register. In a disk reading mode, the data read of the disk will be loaded into this register. In a disk writing mode, the data that has been written earlier into this register will be written into the disk. In a seek mode, the target track address will be written this register.
+
+IRQ will be made \"0\" when the completion of a command has been > either concluded or terminated during process.
+DRQ will be made \"0\" when the data write/read are being requested.
+
+-   Side Select - 7FFCH
+
+![](media/image20.png)
+
+At \"0\", side 0 will be selected, and at \"1\", side 1 will be selected
+
+-   Drive Select - 7FFDH
+
+![](media/image19.png)
+
+-   ASCII16 - DOS2 ROM Page Selector - 7FFEH
+
+![](media/Port7FFEH.png)
+
+
+-   IRQ/DRQ Status - 7FFFH
+
+![](media/image18.png)
+
 ---
 
 ## **HB720 Boards**
@@ -168,13 +171,21 @@ When under a read address command, the ID field track number will be retained in
 To both boards, I have make availability of full Gerber files to order the PCB's to manufacturers. They are all inside gerber directory.
 
 
-**CARTRIDGE BOARD - 3D VIEW**
+**CARTRIDGE BOARD DOS1.X VERSION - 3D VIEW**
 
 ![](media/HB720-Cart.png)
 
 ## CARTRIDGE BOARD SCHEMATICS
 
 ![](media/image35.png)
+
+**CARTRIDGE BOARD DOS2.X VERSION - 3D VIEW**
+
+![](media/HB720-Cart-dos2.png)
+
+## CARTRIDGE BOARD SCHEMATICS
+
+![](media/HB720-Cart-dos2-sch.png)
 
 **FDC Board - 3D VIEW**
 
