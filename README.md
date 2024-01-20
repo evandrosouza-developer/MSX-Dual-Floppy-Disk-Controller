@@ -26,13 +26,11 @@
 
 ## **THEORY OF OPERATION**
 
-## **OVERALL BLOCK DIAGRAM (MSX-DOS 1.X VERSION)**
-![](media/OVERALL_BlockP_Diagram.png)
-
-
 ## **2-1. Cartridge Board**
 
 ## **2-1-1. MSX-DOS 1.X Version => Compatible with all MSX machines**
+
+![](media/OVERALL_BlockP_Diagram.png)
 
 **2-1-1-1. Memory Map**
 
@@ -40,31 +38,29 @@ This board cartridge uses the MSX computer cartridge slot. 16K ROM addresses 400
 
 ![](media/image14.png)
 
-**2-1-2-1. Selection by HB720 Cartridge**
+**2-1-1-2. Selection by HB720 Cartridge**
 
 When the HB720 cartridge has been inserted into the MSX computer cartridge slot, addresses 4000H through 7FFFH will be selected by the cartridge connector signal CS1. In addition, U1 will AND signal SLTSL and the U6 (address decoder) output that has been inverted by U8, and will provide an output to U5 (ROM) pin CE for selection of the ROM.
 
-**2-1-3. Selection by FDC Controller**
+**2-1-1-3. Selection by FDC Controller**
 
 Individual registers of the FDC board have been allocated to the memory space for addresses 7FF8H through 7FFFH, and are selected by address signals A0 through A2 and signal FDC_CS.
 
 ![](media/3-1-3.png)
 
-**2-1-2-1. Memory Map Detailed**
+**2-1-1-4. Memory Map Detailed**
 
 ![](media/2-2-1.png)
 
 ---
 
-## **OVERALL BLOCK DIAGRAM (MSX-DOS 2.X VERSION)**
+## **2-1-2. MSX-DOS 2.X Version => Compatible with MSX 2.0 and up with Memmory Mapper**
+
 ![](media/OVERALL-DOS2-Block-Diagram.png)
-
-
-## **2-1-2. MSX-DOS 2.X Version => Compatible with MSX 2.0 and up with Memmory Mapper machines**
 
 **2-1-2-1. Memory Map**
 
-This board cartridge uses the MSX computer cartridge slot. The 64KB ROM is mapped into banks onto Z80 addresses 4000H through 7FFFH through U5 (ROM page selector hardware that sends the two high order bits A14 and A15 to U7 ROM).
+This board cartridge uses the MSX computer cartridge slot. The 64KB ROM is mapped into banks onto Z80 addresses 4000H through 7FFFH through U5 (ROM page selector hardware that sends the A14 and A15 [the high order] bits to U7 ROM).
 
 ![](media/2-1-1_DOS2.png)
 
@@ -78,11 +74,11 @@ Individual registers of the FDC board have been allocated to the memory space fo
 
 ![](media/2-1-3_DOS2.png)
 
-**2-1-2-1. Memory Map Detailed**
+**2-1-2-4. Memory Map Detailed**
 
 ![](media/3-2-1_DOS2.png)
 
-## **2-2. FDC Board**
+## **2-2. FDC BOARD - THE COMMON PART**
 
 **2-2-1. Selection of Individual FDC chip Registers**
 
@@ -171,27 +167,22 @@ At \"0\", side 0 will be selected, and at \"1\", side 1 will be selected
 To both boards, I have make availability of full Gerber files to order the PCB's to manufacturers. They are all inside gerber directory.
 
 
-**CARTRIDGE BOARD DOS1.X VERSION - 3D VIEW**
+**CARTRIDGE BOARD DOS1.X VERSION:**
 
 ![](media/HB720-Cart.png)
 
-## CARTRIDGE BOARD SCHEMATICS
-
 ![](media/image35.png)
 
-## CARTRIDGE BOARD DOS2.X VERSION - 3D VIEW**
+**CARTRIDGE BOARD DOS2.X VERSION:**
 
 ![](media/HB720-Cart_dos2.png)
 
-**CARTRIDGE BOARD SCHEMATICS**
-
 ![](media/HB720-Cart-dos2-sch.png)
 
-## FDC Board - 3D VIEW (The common part)
+
+**FDC Board - THE COMMON PART:**
 
 ![](media/HB720_FDC.png)
-
-**FDC Board Schematics**
 
 ![](media/image48.png)
 ---
