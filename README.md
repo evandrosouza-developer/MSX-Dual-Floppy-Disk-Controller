@@ -54,7 +54,7 @@ Individual registers of the FDC board have been allocated to the memory space fo
 
 ---
 
-## **2-1-2. MSX-DOS 2.X Version => Compatible with MSX 2.0 and up with Memmory Mapper**
+## **2-1-2. MSX-DOS 2.X Version => Compatible with MSX 2.0 and up with Memory Mapper**
 
 ![](media/OVERALL-DOS2-Block-Diagram.png)
 
