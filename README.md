@@ -179,19 +179,19 @@ To both boards, I have make availability of full Gerber files to order the PCB's
 
 ![](media/image35.png)
 
-**CARTRIDGE BOARD DOS2.X VERSION - 3D VIEW**
+## CARTRIDGE BOARD DOS2.X VERSION - 3D VIEW**
 
-![](media/HB720-Cart-dos2.png)
+![](media/HB720-Cart_dos2.png)
 
-## CARTRIDGE BOARD SCHEMATICS
+**CARTRIDGE BOARD SCHEMATICS**
 
 ![](media/HB720-Cart-dos2-sch.png)
 
-**FDC Board - 3D VIEW**
+## FDC Board - 3D VIEW (The common part)
 
 ![](media/HB720_FDC.png)
 
-## FDC Board Schematics
+**FDC Board Schematics**
 
 ![](media/image48.png)
 ---
