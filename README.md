@@ -8,7 +8,7 @@
 
 </div>
 
-**Compatible with:**
+**Compatible with MSX1 class computers AND MSX2/MSX-DOS2.X **
 
 **EPCOM/SHARP HB-3600**
 
@@ -24,23 +24,29 @@
   
 ---
 
-## **OVERALL BLOCK DIAGRAM**
+## **OVERALL BLOCK DIAGRAM (MSX-DOS 1.X VERSION)**
 ![](media/OVERALL_BlockP_Diagram.png)
+
+
+---
+
+## **OVERALL BLOCK DIAGRAM (MSX-DOS 2.X VERSION)**
+![](media/OVERALL DOS2 Block Diagram.png)
 
 
 ## **THEORY OF OPERATION**
 
-**2-1. Cartridge Board**
+## **2-1. Cartridge Board**
 
-**2-1-1. Memory Map**
+##***2-1-1. MSX-DOS 1.X Version => Compatible with all MSX machines***
 
-This board cartridge uses the MSX computer cartridge slot. Addresses
-4000H through 7FFFH on the memory map have been allocated to the HB720
-cartridge.
+**2-1-1-1. Memory Map**
+
+This board cartridge uses the MSX computer cartridge slot. 16K ROM addresses 4000H through 7FFFH on the memory map have been allocated to the HB720 cartridge.
 
 ![](media/image14.png)
 
-**2-1-2. Selection by HB720 Cartridge**
+**2-1-2-1. Selection by HB720 Cartridge**
 
 When the HB720 cartridge has been inserted into the MSX computer cartridge slot, addresses 4000H through 7FFFH will be selected by the cartridge connector signal CS1. In addition, U1 will AND signal SLTSL and the U6 (address decoder) output that has been inverted by U8, and will provide an output to U5 (ROM) pin CE for selection of the ROM.
 
@@ -50,13 +56,35 @@ Individual registers of the FDC board have been allocated to the memory space fo
 
 ![](media/3-1-3.png)
 
-**2-2. FDC Board**
-
-**2-2-1. Memory Map Detailed**
+**2-1-2-1. Memory Map Detailed**
 
 ![](media/2-2-1.png)
 
-**2-2-2. Selection of Individual FDC chip Registers**
+##**2-1-2. MSX-DOS 2.X Version => Compatible with MSX 2.0 and up with Memmory Mapper machines**
+
+**2-1-2-1. Memory Map**
+
+This board cartridge uses the MSX computer cartridge slot. The 64KB ROM is mapped into banks onto Z80 addresses 4000H through 7FFFH through U5 (ROM page selector hardware that sends the two high order bits A14 and A15 to U7 ROM).
+
+![](media/2-1-1 DOS2.png)
+
+**2-1-2-2. Selection by HB720 Cartridge**
+
+When the HB720 cartridge has been inserted into the MSX computer cartridge slot, addresses 4000H through 7FFFH will be selected by the cartridge connector signal CS1. U1 will AND signal SLTSL and the U6 (address decoder) output that has been inverted by U8, and will provide an output to U7 (ROM) pin CE for selection of the ROM.
+
+**2-1-2-3. Selection by FDC Controller**
+
+Individual registers of the FDC board have been allocated to the memory space for addresses 7FF8H through 7FFFH, and are selected by address signals A0 through A2 and signal FDC_CS.
+
+![](media/2-1-3 DOS2.png)
+
+**2-1-2-1. Memory Map Detailed**
+
+![](media/3-2-1 DOS27.png)
+
+## **2-2. FDC Board**
+
+**2-2-1. Selection of Individual FDC chip Registers**
 
 Individual registers of the FDC (U4) have been allocated to addresses 7FF8H through 7FFBH, and are selected by address signals AO through A2 and signal CS.
 
@@ -84,7 +112,7 @@ STR (STATUS REGISTER
  
  
 
-**2-2-3. Operation of Individual Registers**
+**2-2-2. Operation of Individual Registers**
 
 -   IRQ/DRQ Status - 7FFFH
 
