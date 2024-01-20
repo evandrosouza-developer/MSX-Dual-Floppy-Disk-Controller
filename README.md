@@ -6,9 +6,9 @@
 
 ***Based on Memory Mapped I/O Registers***
 
-</div>
+***Compatible with MSX1 class computers AND MSX2/MSX-DOS2.X***
 
-**Compatible with MSX1 class computers AND MSX2/MSX-DOS2.X **
+</div>
 
 **EPCOM/SHARP HB-3600**
 
@@ -149,7 +149,7 @@ At \"0\", side 0 will be selected, and at \"1\", side 1 will be selected
 
 ![](media/image19.png)
 
--   ASCII16 - DOS2 ROM Page Selector - 7FFEH
+-   ASCII16 - DOS2 ROM Page Selector - 7FFEH (Only DOS 2.X Model)
 
 ![](media/Port7FFEH.png)
 
@@ -164,7 +164,7 @@ At \"0\", side 0 will be selected, and at \"1\", side 1 will be selected
 
 **SCHEMATIC DIAGRAM AND PRINTED CIRCUIT BOARD**
 
-To both boards, I have make availability of full Gerber files to order the PCB's to manufacturers. They are all inside gerber directory.
+I shared here a full set of Gerber files of the three boards, to allow direct order the PCB's to manufacturers. They are all inside gerber directory.
 
 
 **CARTRIDGE BOARD DOS1.X VERSION:**
