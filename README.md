@@ -48,7 +48,7 @@ Individual registers of the FDC board have been allocated to the memory space fo
 
 ![](media/3-1-3.png)
 
-**2-1-1-4. Memory Map Detailed**
+**2-1-1-4. HB720 Detailed Registers Memory Map**
 
 ![](media/2-1-1-4.png)
 
@@ -74,7 +74,7 @@ Individual registers of the FDC board have been allocated to the memory space fo
 
 ![](media/2-1-3_DOS2.png)
 
-**2-1-2-4. Memory Map Detailed**
+**2-1-2-4. HB720 Detailed Registers Memory Map**
 
 ![](media/2-1-2-4.png)
 
