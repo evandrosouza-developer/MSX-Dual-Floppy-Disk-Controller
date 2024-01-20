@@ -31,7 +31,7 @@
 ---
 
 ## **OVERALL BLOCK DIAGRAM (MSX-DOS 2.X VERSION)**
-![](media/OVERALL DOS2 Block Diagram.png)
+![](media/OVERALL_DOS2_Block_Diagram.png)
 
 
 ## **THEORY OF OPERATION**
@@ -66,7 +66,7 @@ Individual registers of the FDC board have been allocated to the memory space fo
 
 This board cartridge uses the MSX computer cartridge slot. The 64KB ROM is mapped into banks onto Z80 addresses 4000H through 7FFFH through U5 (ROM page selector hardware that sends the two high order bits A14 and A15 to U7 ROM).
 
-![](media/2-1-1 DOS2.png)
+![](media/2-1-1_DOS2.png)
 
 **2-1-2-2. Selection by HB720 Cartridge**
 
@@ -76,11 +76,11 @@ When the HB720 cartridge has been inserted into the MSX computer cartridge slot,
 
 Individual registers of the FDC board have been allocated to the memory space for addresses 7FF8H through 7FFFH, and are selected by address signals A0 through A2 and signal FDC_CS.
 
-![](media/2-1-3 DOS2.png)
+![](media/2-1-3_DOS2.png)
 
 **2-1-2-1. Memory Map Detailed**
 
-![](media/3-2-1 DOS27.png)
+![](media/3-2-1_DOS2.png)
 
 ## **2-2. FDC Board**
 
