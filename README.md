@@ -76,7 +76,7 @@ Individual registers of the FDC board have been allocated to the memory space fo
 
 **2-1-2-4. Memory Map Detailed**
 
-![](media/2-1-2-4_DOS2.png)
+![](media/2-1-2-4.png)
 
 ## **2-2. FDC BOARD - THE COMMON PART**
 
