@@ -36,7 +36,7 @@
 
 This board cartridge uses the MSX computer cartridge slot. 16K ROM addresses 4000H through 7FFFH on the memory map have been allocated to the HB720 cartridge.
 
-![](media/image14.png)
+![](media/2-1-1_DOS1.png)
 
 **2-1-1-2. Selection by HB720 Cartridge**
 
