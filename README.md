@@ -30,7 +30,7 @@
 
 ## **2-1-1. MSX-DOS 1.X Version => Compatible with all MSX machines**
 
-![](media/OVERALL_BlockP_Diagram.png)
+![](media/OVERALL_Block_Diagram.png)
 
 **2-1-1-1. Memory Map**
 
