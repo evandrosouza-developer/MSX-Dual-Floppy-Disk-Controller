@@ -60,7 +60,7 @@ Individual registers of the FDC board have been allocated to the memory space fo
 
 **2-1-2-1. Memory Map**
 
-This board cartridge uses the MSX computer cartridge slot. The 64KB ROM is mapped into banks onto Z80 address space 4000H-7FFFH through U5 (ROM page selector hardware that sends the A14 and A15 [the high order] bits to U7 ROM) will be selected by the cartridge connector signal CS1. In addition, U1 will AND signal SLTSL and the U6 (address decoder) output that has been inverted by U8, and will provide an output to U5 (ROM) pin CE for selection of the ROM.
+This board cartridge uses the MSX computer cartridge slot. The 64KB ROM is mapped into banks onto Z80 address space 4000H-7FFFH through U5 (ROM bank selector hardware that sends the A14 and A15 - the high order - bits to U7 ROM) will be selected by the cartridge connector signal CS1. In addition, U1 will AND signal SLTSL and the U6 (address decoder) output that has been inverted by U8, and will provide an output to U5 (ROM) pin CE for selection of the ROM.
 
 ![](media/2-1-1_DOS2.png)
 
@@ -149,7 +149,7 @@ At \"0\", side 0 will be selected, and at \"1\", side 1 will be selected
 
 ![](media/image19.png)
 
--   ASCII16 - DOS2 ROM Page Selector - 7FFEH (Only DOS 2.X Model)
+-   ASCII16 - DOS2 ROM Bank Selector - 7FFEH (Only DOS 2.X Model)
 
 ![](media/Port7FFEH.png)
 
