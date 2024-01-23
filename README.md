@@ -136,9 +136,6 @@ When under a read address command, the ID field track number will be retained in
 
 This is a read/write register. In a disk reading mode, the data read of the disk will be loaded into this register. In a disk writing mode, the data that has been written earlier into this register will be written into the disk. In a seek mode, the target track address will be written this register.
 
-IRQ will be made \"0\" when the completion of a command has been > either concluded or terminated during process.
-DRQ will be made \"0\" when the data write/read are being requested.
-
 -   Side Select - 7FFCH
 
 ![](media/image20.png)
@@ -157,6 +154,9 @@ At \"0\", side 0 will be selected, and at \"1\", side 1 will be selected
 -   IRQ/DRQ Status - 7FFFH
 
 ![](media/image18.png)
+
+IRQ will be made \"0\" when the completion of a command has been > either concluded or terminated during process.
+DRQ will be made \"0\" when the data write/read are being requested.
 
 ---
 
