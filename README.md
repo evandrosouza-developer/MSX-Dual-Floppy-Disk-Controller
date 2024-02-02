@@ -148,6 +148,8 @@ At \"0\", side 0 will be selected, and at \"1\", side 1 will be selected
 
 -   ASCII16 - DOS2 ROM Bank Selector - 7FFEH (Only DOS 2.X Model)
 
+This is a write only register - and returns a dummy value if read.
+
 ![](media/Port7FFEH.png)
 
 
