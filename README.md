@@ -40,7 +40,7 @@ This board cartridge uses the MSX computer cartridge slot. 16K ROM addresses 400
 
 **2-1-1-2. Selection by HB720 Cartridge**
 
-When the HB720 cartridge has been inserted into the MSX computer cartridge slot, 4000H-7FFFH address space will be selected by the cartridge connector signal CS1. In addition, U1 will AND signal SLTSL and the U2 (address decoder) output that has been inverted by U8, and will provide an output to U7 (ROM) pin CE for selection. All this signals are valid as 0, so the used logic port is an OR.
+When the HB720 cartridge has been inserted into the MSX computer cartridge slot, 4000H-7FFFH address space will be selected by the cartridge connector signal CS1. In addition, U1 will AND signal SLTSL and the U2 (address decoder) output that has been inverted by U8, and will provide an output to U5 (ROM) pin CE for selection. All this signals are valid as 0, so the used logic port is an OR.
 
 **2-1-1-3. Selection by FDC Controller**
 
@@ -60,7 +60,7 @@ Individual registers of the FDC board have been allocated to the memory space fo
 
 **2-1-2-1. Memory Map**
 
-This board cartridge uses the MSX computer cartridge slot. The 64KB ROM is mapped into banks onto Z80 address space 4000H-7FFFH through U5 (ROM bank selector hardware that sends the A14 and A15 - the high order - bits to U7 ROM) will be selected by the cartridge connector signal CS1. In addition, U1 will AND signal SLTSL and the U6 (address decoder) output that has been inverted by U8, and will provide an output to U7 (ROM) pin CE for selection of the ROM. All this signals are valid as 0 (low), so the used logic port is an OR.
+This board cartridge uses the MSX computer cartridge slot. The 64KB ROM is mapped into banks onto Z80 address space 4000H-7FFFH through U5 (ROM bank selector hardware that sends the A14 and A15 - the high order - bits to U7 ROM) will be selected by the cartridge connector signal CS1. In addition, U1 will AND signal SLTSL and the U2 (address decoder) output that has been inverted by U8, and will provide an output to U7 (ROM) pin CE for selection of the ROM. All this signals are valid as 0 (low), so the used logic port is an OR.
 
 ![](media/2-1-1_DOS2.png)
 
