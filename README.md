@@ -66,7 +66,7 @@ This board cartridge uses the MSX computer cartridge slot. The 64KB ROM is mappe
 
 **2-1-2-2. Selection by HB720 Cartridge**
 
-When the HB720 cartridge has been inserted into the MSX computer cartridge slot, addresses 4000H through 7FFFH will be selected by the cartridge connector signal CS1. U1 will AND signal SLTSL and the U6 (address decoder) output that has been inverted by U8, and will provide an output to U7 (ROM) pin CE for selection of the ROM.
+When the HB720 cartridge has been inserted into the MSX computer cartridge slot, addresses 4000H through 7FFFH will be selected by the cartridge connector signal CS1. U1 will AND signal SLTSL and the U2 (address decoder) output that has been inverted by U8, and will provide an output to U7 (ROM) pin CE for selection of the ROM.
 
 **2-1-2-3. Selection by FDC Controller**
 
